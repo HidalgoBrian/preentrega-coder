@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- mi css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <!-- iconos de redes -->
     <link
       rel="stylesheet"
@@ -24,11 +24,10 @@
     />
   </head>
   <body>
-    <!-- barra de navegacion -->
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Granja Piru</a>
+          <a class="navbar-brand" href="../index.html">Granja Piru</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -42,48 +41,64 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
                 >Inicio</a
               >
-              <a class="nav-link" href="html/productos.html">Productos</a>
-              <a class="nav-link" href="html/productos.html">Nosotros</a>
-              <a class="nav-link" href="html/sucursal.html">Sucursal</a>
-              <a class="nav-link" href="html/contacto.html">Contacto</a>
+              <a class="nav-link" href="productos.html">Productos</a>
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link" href="sucursal.html">Sucursal</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <!-- main -->
+    <!-- formulario -->
+    <h3 class="text-center">Escribinos</h3>
     <main>
-      <div class="container my-4">
-        <div class="row d-flex justify-content-center">
-          <div class="col-sm-10 col-md-6 col-lg-4">
-            <h1 class="text-center">Granja Piru</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-              porro quod pariatur itaque at libero tempore officia quo
-              assumenda, blanditiis commodi facere repudiandae dolore laudantium
-              reiciendis quas. Adipisci, sit magni?
-            </p>
+      <form action="">
+        <div class="container col-8">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="GranjaPiru"
+            />
           </div>
-          <div class="col-sm-10 col-md-6 col-lg-4">
-            <img class="rounded-4" src="imagenes/pollo.jpg" alt="" />
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="nombre@gmail.com"
+            />
           </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Preguntas</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <input class="btn btn-primary" value="Enviar" type="submit" />
         </div>
-      </div>
-      <div class="container my-5 col-8">
-        <h2 class="text-center">Calidad</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-          molestiae rem enim commodi laboriosam est modi, neque quisquam
-          laudantium non excepturi nemo fugit eligendi animi consequuntur
-          veritatis. Laborum, culpa perferendis.
-        </p>
-      </div>
+      </form>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="footer">
       <p class="text-center mb-0">Buscanos en las redes</p>
       <div class="d-flex justify-content-center">
         <a class="mx-2" href=""><i class="fa-brands fa-instagram"></i></a>

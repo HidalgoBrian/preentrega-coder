@@ -8,3 +8,19 @@ img {
 footer {
   background: linear-gradient(white, rgb(203, 223, 84));
 }
+iframe {
+  width: 70%;
+  height: 20rem;
+}
+.footer {
+  margin-top: 6rem;
+}
+textarea {
+  resize: none;
+}
+
+@media (max-width: 576px) {
+  iframe {
+    width: 100%;
+  }
+}
