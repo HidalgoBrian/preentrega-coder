@@ -1,0 +1,10 @@
+img {
+  max-width: 100%;
+}
+.navbar {
+  background: linear-gradient(rgb(203, 223, 84), white);
+}
+
+footer {
+  background: linear-gradient(white, rgb(203, 223, 84));
+}
